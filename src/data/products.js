@@ -3,19 +3,22 @@ export const products = [
         name: "Cookie Monster",
         image: "./apple.png",
         price: 9.99,
-        bg: "bg-pink-600"
+        bg: "bg-pink-600",
+        description: 'A velvety blend of zesty lemon, creamy Greek yogurt, and rich pound cake crumbs, this smoothie tastes like a sunlit slice of lemon pound cake in a chilled glass. Each sip bursts with citrus brightness, mellowed by a buttery vanilla undertone and a whisper of sweetness that lingers like a summer afternoon.'
     },
     {
         name: "Snickers",
         image: "./apple.png",
         price: 9.99,
-        bg: "bg-pink-600"
+        bg: "bg-pink-600",
+        description: 'A velvety blend of zesty lemon, creamy Greek yogurt, and rich pound cake crumbs, this smoothie tastes like a sunlit slice of lemon pound cake in a chilled glass. Each sip bursts with citrus brightness, mellowed by a buttery vanilla undertone and a whisper of sweetness that lingers like a summer afternoon.'
     },
     {
         name: "Apple Cider Donut",
         image: "./apple.png",
         price: 9.99,
-        bg: "bg-pink-600"
+        bg: "bg-pink-600",
+        description: 'A velvety blend of zesty lemon, creamy Greek yogurt, and rich pound cake crumbs, this smoothie tastes like a sunlit slice of lemon pound cake in a chilled glass. Each sip bursts with citrus brightness, mellowed by a buttery vanilla undertone and a whisper of sweetness that lingers like a summer afternoon.'
     },
     
 ]
