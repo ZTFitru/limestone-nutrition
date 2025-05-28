@@ -7,9 +7,9 @@ function LocationHours() {
                 width="100%" 
                 height="200" 
                 className="rounded"
-                allowfullscreen="" 
+                allowFullScreen="" 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerPolicy="no-referrer-when-downgrade">
             </iframe>
             <p className="text-black font-semibold">4569 Kirkwood Hwy</p>
             <p>Wilmington, DE 19808</p>
