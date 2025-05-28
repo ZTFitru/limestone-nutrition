@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi"; 
 
+
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <nav className="p-4 flex items-center justify-between bg-limestone shadow-md fixed w-full top-0 z-50">
-      <img src="./Limestone logo.png" alt="logo of limestone nutrition"  className="w-20 h-20 object-contain"/>
+      <a href="/">
+        <img src="./Limestone logo.png" alt="logo of limestone nutrition"  className="w-20 h-20 object-contain"/>
+      </a>
       <button
         className="md:hidden text-2xl"
         onClick={() => setMenuOpen(!menuOpen)}

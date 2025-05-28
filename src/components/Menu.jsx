@@ -4,6 +4,7 @@ import { allProducts } from '../data/products';
 function Menu() {
   const [searchTerm, setSearchTerm] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
+  const [expandedIndex, setExpandedIndex] = useState(null)
 
   const itemsPerPage = 10
 
@@ -20,6 +21,10 @@ function Menu() {
   const goToPage = (page) => {
     setCurrentPage(page);
     document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })
+  };
+
+  const toggleExpand = (item)=> {
+    setExpandedIndex(prev => (prev ===  item ? null: item))
   };
 
   return (
@@ -40,13 +45,28 @@ function Menu() {
       </div>
 
       <div className="max-w-3xl mx-auto grid gap-4">
-        {currentProducts.map((drink, idx) => (
+        {currentProducts.map((drink, item)=> (
           <div
-            key={idx}
-            className="flex justify-between items-center bg-[#2d3a3f] rounded-md px-4 py-3 hover:bg-[#3c4a50] transition"
+            key={item}
+            className='bg-[#2d3a3f] rounded-md px-4 py-3 hover:bg-[#3c4a50] transition cursor-pointer'
+            onClick={()=> toggleExpand(item)}
           >
-            <span className="text-lg font-medium">{drink.name}</span>
-            <span className="text-sm font-semibold">${drink.price.toFixed(2)}</span>
+            <div className='flex justify-between items-center'>
+              <span className="text-lg font-medium">{drink.name}</span>
+              <span className="text-sm font-semibold">${drink.price.toFixed(2)}</span>
+            </div>
+            {expandedIndex === item && (
+              <div className="mt-4 border-t bg-white border-gray-600 pt-4">
+                {drink.image && (
+                  <img
+                    src={drink.image}
+                    alt={drink.name}
+                    className="w-full max-w-xs mx-auto rounded-lg mb-4"
+                />
+                )}
+                <p className="text-sm text-black p-2 text-center">{drink.description}</p>
+            </div>
+            )}
           </div>
         ))}
       </div>

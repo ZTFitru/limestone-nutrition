@@ -21,10 +21,10 @@ export const products = [
 ]
 
 export const allProducts = [
-    { name: "Lemon Pound Cake", price: 9.99 },
-    { name: "Raspberry Cheesecake", price: 9.99 },
-    { name: "Banana Caramel Cheesecake", price: 9.99 },
-    { name: "Peanut Butter Cookie", price: 10.99 },
+    { name: "Lemon Pound Cake", price: 9.99, description: 'A velvety blend of zesty lemon, creamy Greek yogurt, and rich pound cake crumbs, this smoothie tastes like a sunlit slice of lemon pound cake in a chilled glass. Each sip bursts with citrus brightness, mellowed by a buttery vanilla undertone and a whisper of sweetness that lingers like a summer afternoon.', image: './apple.png' },
+    { name: "Raspberry Cheesecake", price: 9.99, description: 'A velvety blend of zesty lemon, creamy Greek yogurt, and rich pound cake crumbs, this smoothie tastes like a sunlit slice of lemon pound cake in a chilled glass. Each sip bursts with citrus brightness, mellowed by a buttery vanilla undertone and a whisper of sweetness that lingers like a summer afternoon.', image: './apple.png'  },
+    { name: "Banana Caramel Cheesecake", price: 9.99, description: 'A velvety blend of zesty lemon, creamy Greek yogurt, and rich pound cake crumbs, this smoothie tastes like a sunlit slice of lemon pound cake in a chilled glass. Each sip bursts with citrus brightness, mellowed by a buttery vanilla undertone and a whisper of sweetness that lingers like a summer afternoon.', image: './apple.png'  },
+    { name: "Peanut Butter Cookie", price: 10.99, description: 'A velvety blend of zesty lemon, creamy Greek yogurt, and rich pound cake crumbs, this smoothie tastes like a sunlit slice of lemon pound cake in a chilled glass. Each sip bursts with citrus brightness, mellowed by a buttery vanilla undertone and a whisper of sweetness that lingers like a summer afternoon.', image: './apple.png'  },
     { name: "Cinnamon Toast Crunch", price: 8.99 },
     { name: "Salted Carmel Crunch", price: 9.49 },
     { name: "PB Brownie", price: 8.49 },
